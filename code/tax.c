@@ -2,39 +2,32 @@
 
 int main()
 {
-    // Amount = a
-    float a;
-    float b = 0, c = 0, d = 0;
+    float income;
+    float tax = 0;
 
-    b = b * (0.05) * (a - 250000);
-    c = c * (0.2) * (a - 500000);
-    d = d * (0.3) * (a - 1000000);
     printf("Enter your income in numericals : \n");
-    scanf("%f", &a);
+    scanf("%f", &income);
 
-    if (a <= 250000)
+    if (income < 250000)
     {
         printf("you don't have to pay tax");
     }
-    else if (a > 250000 && a < 500000)
+    if (income >= 250000 && income <= 500000)
+
     {
-        printf("You have to pay 5%% tax of your income \n");
-        printf("Your tax amount is %f", b);
+        tax = tax + 0.05 * (income - 250000);
     }
-    else if (a >= 500000 && a < 1000000)
+    if (income >= 500000 && income < 1000000)
+
     {
-        printf("You have to pay 20%% tax of your Income \n");
-        printf("Your tax amount is %f", c);
+        tax = tax + 0.2 * (income - 500000);
     }
-    else if (a >= 1000000)
+    if (income >= 1000000)
+
     {
-        printf("You have to pay 30%% tax of your Income \n");
-        printf("Your tax amount is %f", d);
+        tax = tax + 0.3 * (income - 1000000);
     }
-    else
-    {
-        printf("Enter amount coreectly");
-    }
+    printf("your income tax to be paid is %f \n", tax);
 
     return 0;
 }
