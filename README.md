@@ -1,2 +1,2 @@
 # f_code
-I'm Newbie to coding.
+Learning to code
