@@ -1,5 +1,5 @@
 #include<stdio.h>
-int rec(int x)
+//int rec(int x)
 {
     int f;
     if (x==1)
