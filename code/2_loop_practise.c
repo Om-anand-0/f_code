@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//use to make loops
 int main()
 {
     int i=0;
